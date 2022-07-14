@@ -1,0 +1,99 @@
+/* $: #ff385c; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff385c;
+}
+
+/* HEADER STYLES*/
+
+.logo{
+    width: 4em;
+    margin: 1.2em;
+}
+input{
+    width: 50em;
+    height: 3.5em;
+    margin: 1.7em;
+    color: black;
+    padding: 1em;
+    font-size: 1em;
+}
+.maindiv{
+background-image: url(../images/header.jpg);
+background-color: rgba(0, 0, 0, 0.8);
+background-blend-mode: soft-light;
+background-size: cover;    
+text-align: center;
+}
+.title{
+    padding: 3em;
+    font-size: 2.8em;
+    text-shadow: 0px 2px 2px black;
+}
+.nav{
+    display:flex ;
+    justify-content: center;
+}
+
+/* MAIN STYLES */
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr";
+    margin: 4em auto;
+}
+.alojamiento{
+    text-align: center;
+    box-shadow: 0px 2px 3px black ;
+    border-radius: 5px;
+    margin: 3em;
+    overflow: hidden;
+}
+.hotel__h1{
+    padding: .5em;
+    font-size: 2em;
+}
+
+.hotel__ubi,.hotel__precio,.btn{
+ padding: .8em;
+}
+
+.btn{
+    padding: 1em;
+    width: 100%;
+    background-color: #ff385c;
+    color: #fff;
+    border: none;
+    transition: .2s;
+}
+
+.btn:hover{
+    color: #ff385c;
+    background-color: #fff;
+    outline: 1px solid #ff305c;
+    transition: .1s;
+    cursor: pointer;
+}
+.img__container{
+    width: 100%;
+    overflow: hidden;
+}
+.hotel__img{
+    width: 100%;
+    height: 17em;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3em;
+}
