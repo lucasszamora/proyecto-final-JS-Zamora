@@ -12,7 +12,7 @@ class hotel{
 }
 }
 
-const hotel1 = new hotel ("./images/hotel1.png","Miami Resort","Miami, EE.UU.", 34)
+const hotel1 = new hotel ("./images/hotel1.png","Miami Resort","Miami, EE. UU.", 34)
 const hotel2 = new hotel ("./images/hotel2.jpg","Vistas do Praia Hotel","Lisboa, Portugal.", 42)
 const hotel3 = new hotel ("./images/hotel3.jpg","Buenos Aires Hilton","Buenos Aires, Argentina.", 27)
 const hotel4 = new hotel ("./images/hotel4.jpg","Moonlight Suite","New York, EE. UU.", 30)
@@ -57,4 +57,20 @@ inputBuscador.addEventListener("change", () => { console.log(inputBuscador.value
 
 boton.addEventListener("click", () =>{ console.log (inputBuscador.value)})
 
+document.addEventListener("keyup", e=>{
 
+if (e.target.matches("#inputBuscador")){  
+
+if (e.key ==="Escape")e.target.value = ""
+
+document.querySelectorAll(".alojamiento").forEach(palabra =>{
+  
+palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+
+?palabra.classList.remove("filtro")
+
+:palabra.classList.add("filtro")
+
+})
+}
+})
