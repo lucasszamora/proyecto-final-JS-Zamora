@@ -51,11 +51,14 @@ hoteles.forEach(hotel => {
 const inputBuscador = document.getElementById("inputBuscador")
 const boton= document.getElementById("button")
 
-inputBuscador.addEventListener("input", () => { console.log(inputBuscador.value) })
-
-inputBuscador.addEventListener("change", () => { console.log(inputBuscador.value) })
+// ESTO LO PUSE COMO PARA QUE LAS BUSQUEDAS QUE HAGA EL USUARIO QUEDEN GUARDADAS, Y EN OCASIONES FUTURAS LE LLEGUEN PROMOS U OFERTAS QUE COINCIDAN CON SU BUSQUEDA
 
 boton.addEventListener("click", () =>{ console.log (inputBuscador.value)})
+
+
+// 
+// 
+ 
 
 document.addEventListener("keyup", e=>{
 
