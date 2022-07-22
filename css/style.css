@@ -15,6 +15,7 @@
     width: 4em;
     margin: 1.2em;
 }
+
 input{
     width: 50em;
     height: 3.5em;
@@ -23,6 +24,15 @@ input{
     padding: 1em;
     font-size: 1em;
 }
+
+.button{
+    margin: 2.3em 0;
+    height: 3.5em;
+    width: 8em;
+    border-radius: .6em;
+    border: #ff305c solid ;
+}
+
 .maindiv{
 background-image: url(../images/header.jpg);
 background-color: rgba(0, 0, 0, 0.8);
@@ -42,7 +52,7 @@ text-align: center;
 
 /* MAIN STYLES */
 
-.container{
+#container{
     display: grid;
     grid-template-areas: 
     "1fr 1fr 1fr"
