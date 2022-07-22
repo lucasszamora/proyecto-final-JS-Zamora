@@ -9,6 +9,9 @@
     color: #ff385c;
 }
 
+body{
+    background-color: rgb(231, 231, 231);
+}
 /* HEADER STYLES*/
 
 .logo{
@@ -30,7 +33,18 @@ input{
     height: 3.5em;
     width: 8em;
     border-radius: .6em;
-    border: #ff305c solid ;
+    cursor: pointer;
+    color: white;
+    background: #ff385c ;
+    transition: .3s;
+    border: white solid;
+}
+
+.button:hover{
+    color: #ff385c;
+    border: black solid ;
+    background-color: white;
+    transition: .3s;
 }
 
 .maindiv{
@@ -68,14 +82,24 @@ text-align: center;
     border-radius: 5px;
     margin: 3em;
     overflow: hidden;
+    transition: .1s;
+    background-color: snow;
 }
+
+.alojamiento:hover{
+    transition: .1s;
+    transform: scale(1.05);
+}
+
 .hotel__h1{
     padding: .5em;
     font-size: 2em;
+    text-shadow: 0px 1px 1px black;
 }
 
 .hotel__ubi,.hotel__precio,.btn{
- padding: .8em;
+    text-shadow: 0px 0px 1px #ff305c;
+    padding: .8em;
 }
 
 .btn{
