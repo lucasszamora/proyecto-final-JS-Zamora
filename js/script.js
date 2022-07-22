@@ -12,7 +12,7 @@ class hotel{
 }
 }
 
-const hotel1 = new hotel ("./images/hotel1.png","Hotel 1","Miami", 44)
+const hotel1 = new hotel ("./images/hotel1.png","Miami Resort","Miami", 44)
 const hotel2 = new hotel ("./images/hotel2.jpg","Hotel 1","Miami", 44)
 const hotel3 = new hotel ("./images/hotel3.jpg","Hotel 1","Miami", 44)
 const hotel4 = new hotel ("./images/hotel4.jpg","Hotel 1","Miami", 44)
@@ -49,4 +49,12 @@ hoteles.forEach(hotel => {
 // EVENTOS addEventListener (CLASE EVENTOS)
 
 const inputBuscador = document.getElementById("inputBuscador")
+const boton= document.getElementById("button")
+
+inputBuscador.addEventListener("input", () => { console.log(inputBuscador.value) })
+
+inputBuscador.addEventListener("change", () => { console.log(inputBuscador.value) })
+
+boton.addEventListener("click", () =>{ console.log (inputBuscador.value)})
+
 
