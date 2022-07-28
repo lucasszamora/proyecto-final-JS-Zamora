@@ -6,11 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    color: #ff385c;
 }
 
 body{
-    background-color: rgb(231, 231, 231);
+    background-color: #e7e7e7;
 }
 /* HEADER STYLES*/
 
@@ -26,6 +25,10 @@ input{
     color: black;
     padding: 1em;
     font-size: 1em;
+    border-radius: .8em ;
+    border: none;
+    transition: 1s ease;
+    box-shadow:  0px 2px 4px black;
 }
 
 .button{
@@ -36,28 +39,30 @@ input{
     cursor: pointer;
     color: white;
     background: #ff385c ;
-    transition: .3s;
+    transition: 1s;
     border: white solid;
+    box-shadow:  0px 2px 4px black;
 }
 
 .button:hover{
     color: #ff385c;
     border: black solid ;
     background-color: white;
-    transition: .3s;
+    transition: 1s;
 }
 
 .maindiv{
-background-image: url(../images/header.jpg);
-background-color: rgba(0, 0, 0, 0.8);
-background-blend-mode: soft-light;
-background-size: cover;    
-text-align: center;
+background-image: url(../images/wave.svg);
+text-align: right;
+transition: 1s ease;
 }
 .title{
-    padding: 3em;
-    font-size: 2.8em;
-    text-shadow: 0px 2px 2px black;
+    padding: 1em 0 1.5em;
+    font-size: 5.5em;
+    text-shadow: 0px 2px 4px black;
+    color: white;
+    text-align: center;
+    transition: 1s;
 }
 .nav{
     display:flex ;
@@ -74,16 +79,19 @@ text-align: center;
     "1fr 1fr 1fr"
     "1fr 1fr 1fr"
     "1fr 1fr 1fr";
-    margin: 4em auto;
+    padding: 4em 0;
+    transition: 1s ease;
 }
 .alojamiento{
     text-align: center;
     box-shadow: 0px 2px 3px black ;
     border-radius: 5px;
-    margin: 3em;
+    margin: 1em 2em;
     overflow: hidden;
     transition: .1s;
     background-color: snow;
+    color: #ff385c;
+    transition: 1s ease;
 }
 
 .alojamiento:hover{
@@ -95,6 +103,7 @@ text-align: center;
     padding: .5em;
     font-size: 2em;
     text-shadow: 0px 1px 1px black;
+    transition: 1s ease;
 }
 
 .hotel__ubi,.hotel__precio,.btn{
@@ -130,11 +139,79 @@ text-align: center;
 footer{
     text-align: center;
     font-size: 1.3em;
+    outline: solid 3px #ff305c;
+    padding: 10px;
+    color: #ff385c;
 }
-
 
 .filtro{
     opacity: 0;
     visibility: hidden;
     order: 1;
+}
+
+/* 
+DARK MODE - DARK MODE - DARK MODE -DARK MODE
+*/
+
+.darkModeContainer{
+    background: rgb(20, 20, 20);
+}
+
+.darkMain{
+    background-image: url(../images/wave_1.svg);
+    transition: 1s ease;
+}
+.darkModeAlojamiento{
+    box-shadow: 3px 3px 2px white, -3px -3px 1px white;
+    background-color: rgb(0, 0, 0);
+    transition: 1s ease;
+}
+
+.darkInput{
+    background-color: #000;
+    color: white;
+    transition: 1s ease;
+    border: none;
+    box-shadow: 0px 1px 3px #ff385c, 0px -1px 3px #ff385c;
+}
+
+.darkFont{
+    color: white;
+    transition: 1s ease;
+}
+
+.darkfooter{
+    background-color: #000;
+    color: white;
+    outline: solid 2px white;
+    padding: 10px;
+}
+
+#darkBtn{
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    background-color: #000;
+    padding: 7px;
+    margin: 20px 0px ;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#lightBtn{
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    padding: 7px;
+    margin: 20px 4px;
+    color: black;
+    cursor: pointer;
+    transition: .1s;
+}
+
+#lightBtn:hover, #darkBtn:hover{
+    transform: scale(1.04);
+    transition: .2s;
 }

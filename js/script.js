@@ -27,7 +27,6 @@ const hotel12 = new hotel ("./images/hotel12.png","Saranda","Bora Bora, French P
 const hotel13 = new hotel ("./images/hotel13.jpg","Arrayanes Experience","Bariloche, Argentina.", 88)
 const hotel14 = new hotel ("./images/hotel14.jpg","Restare Fortunato","Napoles, Italia.", 238)
 const hotel15 = new hotel ("./images/hotel15.jpg","Amazonas Resort","Amazonas, Brasil.", 43)
-
 const hoteles=[hotel1,hotel2,hotel3,hotel4,hotel5,hotel6,hotel7,hotel8,hotel9,hotel10,hotel11,hotel12,hotel13,hotel14,hotel15]
 
 hoteles.forEach(hotel => {
@@ -77,4 +76,73 @@ palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
 
 })
 }
+})
+
+
+// DARK MODE - DARK MODE - DARK MODE -DARK MODE
+// DARK MODE - DARK MODE - DARK MODE -DARK MODE
+// DARK MODE - DARK MODE - DARK MODE -DARK MODE
+
+// VARIABLES
+
+const alojamientoDivs= document.querySelectorAll(".alojamiento")
+const h1s= document.querySelectorAll(".hotel__h1")
+const ubis= document.querySelectorAll(".hotel__ubi")
+const precios= document.querySelectorAll(".hotel__precio")
+const darkBtn= document.getElementById("darkBtn")
+
+// 
+// MODO OSCURO BOTÓN
+// 
+darkBtn.addEventListener("click", ()=>{
+
+document.querySelector(".title").classList.add("darkFont")
+
+document.querySelector(".maindiv").classList.add("darkMain")
+
+document.getElementById("container").classList.add("darkModeContainer")
+
+document.getElementById("button").classList.add("darkInput")
+
+document.getElementById("footer").classList.add("darkfooter")
+
+document.getElementById("inputBuscador").classList.add("darkInput")
+
+alojamientoDivs.forEach(element => { element.classList.add("darkModeAlojamiento")});
+
+h1s.forEach(element => { element.classList.add("darkFont")});
+
+ubis.forEach(element => { element.classList.add("darkFont")});
+
+precios.forEach(element => { element.classList.add("darkFont")});
+
+
+})
+
+// 
+// MODO CLARO BOTÓN
+// 
+const lightBtn= document.getElementById("lightBtn")
+
+lightBtn.addEventListener("click", ()=>{
+
+    document.querySelector(".title").classList.remove("darkFont")    
+
+    document.querySelector(".maindiv").classList.remove("darkMain")
+
+    document.getElementById("container").classList.remove("darkModeContainer")
+
+    document.getElementById("button").classList.remove("darkInput")
+
+    document.getElementById("footer").classList.remove("darkfooter")   
+
+    document.getElementById("inputBuscador").classList.remove("darkInput")
+
+    alojamientoDivs.forEach(element => { element.classList.remove("darkModeAlojamiento")});
+
+    h1s.forEach(element => { element.classList.remove("darkFont")});
+
+    ubis.forEach(element => { element.classList.remove("darkFont")});
+
+    precios.forEach(element => { element.classList.remove("darkFont")});
 })
