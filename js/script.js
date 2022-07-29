@@ -83,13 +83,51 @@ palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
 
+// 
 // VARIABLES
+// 
 
 const alojamientoDivs= document.querySelectorAll(".alojamiento")
 const h1s= document.querySelectorAll(".hotel__h1")
 const ubis= document.querySelectorAll(".hotel__ubi")
 const precios= document.querySelectorAll(".hotel__precio")
 const darkBtn= document.getElementById("darkBtn")
+let darkMode
+
+// 
+// LOCAL STORAGE
+// 
+
+
+if(localStorage.getItem("theme")) {
+    darkMode= localStorage.getItem("theme")
+} else{
+    localStorage.setItem("theme", "light")
+}
+
+if (darkMode == "dark") {
+
+document.querySelector(".title").classList.add("darkFont")
+
+document.querySelector(".maindiv").classList.add("darkMain")
+
+document.getElementById("container").classList.add("darkModeContainer")
+
+document.getElementById("button").classList.add("darkInput")
+
+document.getElementById("footer").classList.add("darkfooter")
+
+document.getElementById("inputBuscador").classList.add("darkInput")
+
+alojamientoDivs.forEach(element => { element.classList.add("darkModeAlojamiento")});
+
+h1s.forEach(element => { element.classList.add("darkFont")});
+
+ubis.forEach(element => { element.classList.add("darkFont")});
+
+precios.forEach(element => { element.classList.add("darkFont")});
+
+}
 
 // 
 // MODO OSCURO BOTÓN
@@ -116,6 +154,7 @@ ubis.forEach(element => { element.classList.add("darkFont")});
 
 precios.forEach(element => { element.classList.add("darkFont")});
 
+localStorage.setItem("theme","dark")
 
 })
 
@@ -145,4 +184,7 @@ lightBtn.addEventListener("click", ()=>{
     ubis.forEach(element => { element.classList.remove("darkFont")});
 
     precios.forEach(element => { element.classList.remove("darkFont")});
+
+    localStorage.setItem("theme","light")
+
 })
