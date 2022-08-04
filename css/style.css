@@ -32,23 +32,25 @@ input{
 }
 
 .button{
-    margin: 2.3em 0;
-    height: 3.5em;
-    width: 8em;
-    border-radius: .6em;
+
     cursor: pointer;
     color: white;
     background: #ff385c ;
-    transition: 1s;
+    transition: .4s;
     border: white solid;
     box-shadow:  0px 2px 4px black;
+    height: 4em;
+    padding: 1.3em;
+    margin: 1.8em 0.3em;
+    border-radius: 50%;
+    font-size: .9em;
+    text-align: center;
 }
 
 .button:hover{
     color: #ff385c;
-    border: black solid ;
     background-color: white;
-    transition: 1s;
+    transition: .4s;
 }
 
 .maindiv{
@@ -174,6 +176,7 @@ DARK MODE - DARK MODE - DARK MODE -DARK MODE
     transition: 1s ease;
     border: none;
     box-shadow: 0px 1px 3px #ff385c, 0px -1px 3px #ff385c;
+    
 }
 
 .darkFont{
@@ -265,6 +268,6 @@ DARK MODE - DARK MODE - DARK MODE -DARK MODE
     .button{
         margin: 2.3em 2em 2.3em 0em;
         height: auto;
-        padding: 0.6em;
+        padding: 0.8em;
     }
 }
