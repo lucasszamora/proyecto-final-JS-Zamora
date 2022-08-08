@@ -8,6 +8,18 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0,.1); }
+::-webkit-scrollbar-thumb {
+    background: #ff385c;
+    transition: all .5s; 
+    border: solid .3px #f81243;
+}
+::-webkit-scrollbar-thumb {
+    transition: all 1s;
+}
+
 body{
     background-color: #e7e7e7;
 }
@@ -174,7 +186,7 @@ DARK MODE - DARK MODE - DARK MODE -DARK MODE
     background-color: #000;
     color: white;
     transition: 1s ease;
-    border: none;
+    border: solid black;
     box-shadow: 0px 1px 3px #ff385c, 0px -1px 3px #ff385c;
     
 }
