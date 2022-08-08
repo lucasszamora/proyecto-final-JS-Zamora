@@ -8,15 +8,15 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 10px;
     background-color: rgba(0, 0, 0,.1); }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background: #ff385c;
     transition: all .5s; 
     border: solid .3px #f81243;
 }
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     transition: all 1s;
 }
 
