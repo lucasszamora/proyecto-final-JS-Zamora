@@ -42,15 +42,13 @@ fetch("../hotels.json")
         <h2 class="hotel__h1">${hotel.nombre}</h2>
         <p class="hotel__ubi">Ubicación: ${hotel.ubicacion}</p>
         <p class="hotel__precio"><b>USD ${hotel.precio}</b> por noche</p>
-        <button class="btn">RESERVAR</button>
+        <button class="btn" id="btn${hotel.indice}">RESERVAR</button>
     </div>
         `
     })
 })
 
-setTimeout(() => {
-    console.log ("pedazo de gato de mierda")
-}, 3000);
+
 
 
 
@@ -202,5 +200,25 @@ lightBtn.addEventListener("click", ()=>{
 
 })
 
+///////// LIBRERIAS
 
-// LIBRERIAS
+const boton1 = document.getElementById("btn1")
+const boton2 = document.getElementById("btn2")
+const boton3 = document.getElementById("btn3")
+const boton4 = document.getElementById("btn4")
+const boton5 = document.getElementById("btn5")
+const boton6 = document.getElementById("btn6")
+const boton7 = document.getElementById("btn7")
+const boton8 = document.getElementById("btn8")
+const boton9 = document.getElementById("btn9")
+const boton10 = document.getElementById("btn10")
+const boton11 = document.getElementById("btn11")
+const boton12 = document.getElementById("btn12")
+const boton13 = document.getElementById("btn13")
+const boton14 = document.getElementById("btn14")
+const boton15 = document.getElementById("btn15")
+
+const botonesDeMierda= [boton1,boton2,boton3,boton4,boton5,boton6,boton7,boton8,boton9,boton10,boton11,boton12,boton13,boton14,boton15]
+
+console.log(boton1)
+console.log(botonesDeMierda)
