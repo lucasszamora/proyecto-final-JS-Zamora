@@ -1,0 +1,93 @@
+[
+    {
+        "foto":"./images/hotel1.png",
+        "nombre":"Miami Resort",
+        "ubicacion":"Miami, EE. UU.",
+        "precio": 34
+    },
+    {
+        "foto":"./images/hotel2.jpg",
+        "nombre":"Vistas do Praia Hotel",
+        "ubicacion":"Lisboa, Portugal.",
+        "precio": 42
+    },
+    {
+        "foto":"./images/hotel3.jpg",
+        "nombre":"Buenos Aires Hilton",
+        "ubicacion":"Buenos Aires, Argentina.",
+        "precio": 27
+    },
+    {
+        "foto":"./images/hotel4.jpg",
+        "nombre":"Moonlight Suite",
+        "ubicacion":"New York, EE. UU.",
+        "precio": 30
+    },
+    {
+        "foto":"./images/hotel5.png",
+        "nombre":"Sekhmet Hotel",
+        "ubicacion":"El Cairo, Egipto.",
+        "precio": 48
+    },
+    {
+        "foto":"./images/hotel6.jpg",
+        "nombre":"Hotel Luz y Fuerza",
+        "ubicacion":"Mar del Plata, Argentina.",
+        "precio": 22
+    },
+    {
+        "foto":"./images/hotel7.jpg",
+        "nombre":"Apple Playroom",
+        "ubicacion":"California. EE. UU.",
+        "precio": 50
+    },
+    {
+        "foto":"./images/hotel8.png",
+        "nombre":"Hotel Taquito",
+        "ubicacion":"Isla del Carmen, Mexico.",
+        "precio": 69
+    },
+    {
+        "foto":"./images/hotel9.jpg",
+        "nombre":"Budha Resort & Spa",
+        "ubicacion":"Sidney, Australia.",
+        "precio": 61
+    },
+    {
+        "foto":"./images/hotel10.jpg",
+        "nombre":"Pharaoh Paradise",
+        "ubicacion":"Alexandría, Egipto.",
+        "precio": 52
+    },
+    {
+        "foto":"./images/hotel11.jpg",
+        "nombre":"Pachamama Resort",
+        "ubicacion":"La Paz, Bolivia.",
+        "precio": 47
+    },
+    {
+        "foto":"./images/hotel12.png",
+        "nombre":"Saranda",
+        "ubicacion":"Bora Bora, French Polynesia.",
+        "precio": 188    
+    },
+    {
+        "foto":"./images/hotel13.jpg",
+        "nombre":"Arrayanes Experience",
+        "ubicacion":"Bariloche, Argentina.",
+        "precio": 88
+    },
+    {
+        "foto":"./images/hotel14.jpg",
+        "nombre":"Restare Fortunato",
+        "ubicacion":"Napoles, Italia.",
+        "precio": 238
+    },
+    {
+        "foto":"./images/hotel15.jpg",
+        "nombre":"Amazonas Resort",
+        "ubicacion":"Amazonas, Brasil.",
+        "precio": 43
+    }
+    
+]
