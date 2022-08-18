@@ -164,6 +164,22 @@ footer{
     order: 1;
 }
 
+
+/* SWEET ALERT */
+.swal2-container.swal2-center>.swal2-popup {
+    background: #ff385C;
+    color: white;
+    border: solid;
+}
+.swal2-styled.swal2-confirm{
+background-color: #000;
+font-size: 1.3em;
+border: solid;
+border-radius: 15px;
+
+}
+/*  */
+
 /* 
 DARK MODE - DARK MODE - DARK MODE -DARK MODE
 */

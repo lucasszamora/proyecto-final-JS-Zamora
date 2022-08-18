@@ -46,50 +46,41 @@ fetch("../hotels.json")
     </div>
         `
     })
-})
+ ////////////////     LIBRERIAS
 
+    const boton1 = document.getElementById("btn1")
+    const boton2 = document.getElementById("btn2")
+    const boton3 = document.getElementById("btn3")
+    const boton4 = document.getElementById("btn4")
+    const boton5 = document.getElementById("btn5")
+    const boton6 = document.getElementById("btn6")
+    const boton7 = document.getElementById("btn7")
+    const boton8 = document.getElementById("btn8")
+    const boton9 = document.getElementById("btn9")
+    const boton10 = document.getElementById("btn10")
+    const boton11 = document.getElementById("btn11")
+    const boton12 = document.getElementById("btn12")
+    const boton13 = document.getElementById("btn13")
+    const boton14 = document.getElementById("btn14")
+    const boton15 = document.getElementById("btn15")
 
+    boton1.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton2.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton3.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton4.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton5.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton6.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton7.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton8.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton9.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton10.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton11.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton12.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton13.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton14.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    boton15.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
 
-
-
-
-
-
-
-// EVENTOS addEventListener (CLASE EVENTOS)
-
-const inputBuscador = document.getElementById("inputBuscador")
-const boton= document.getElementById("button")
-
-
-// ESTO LO PUSE COMO PARA QUE LAS BUSQUEDAS QUE HAGA EL USUARIO QUEDEN GUARDADAS, Y EN OCASIONES FUTURAS LE LLEGUEN PROMOS U OFERTAS QUE COINCIDAN CON SU BUSQUEDA
-// 
-// 
-inputBuscador.addEventListener("change", () => { console.log(inputBuscador.value) })
-boton.addEventListener("click", () =>{ console.log (inputBuscador.value)})
-// 
-// 
-//  
-
-document.addEventListener("keyup", e=>{
-
-if (e.target.matches("#inputBuscador")){  
-
-if (e.key ==="Escape")e.target.value = ""
-
-document.querySelectorAll(".alojamiento").forEach(palabra =>{
-  
-palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-
-?palabra.classList.remove("filtro")
-
-:palabra.classList.add("filtro")
-
-})
-}
-})
-
-
+    
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
@@ -200,25 +191,44 @@ lightBtn.addEventListener("click", ()=>{
 
 })
 
-///////// LIBRERIAS
+})
 
-const boton1 = document.getElementById("btn1")
-const boton2 = document.getElementById("btn2")
-const boton3 = document.getElementById("btn3")
-const boton4 = document.getElementById("btn4")
-const boton5 = document.getElementById("btn5")
-const boton6 = document.getElementById("btn6")
-const boton7 = document.getElementById("btn7")
-const boton8 = document.getElementById("btn8")
-const boton9 = document.getElementById("btn9")
-const boton10 = document.getElementById("btn10")
-const boton11 = document.getElementById("btn11")
-const boton12 = document.getElementById("btn12")
-const boton13 = document.getElementById("btn13")
-const boton14 = document.getElementById("btn14")
-const boton15 = document.getElementById("btn15")
 
-const botonesDeMierda= [boton1,boton2,boton3,boton4,boton5,boton6,boton7,boton8,boton9,boton10,boton11,boton12,boton13,boton14,boton15]
 
-console.log(boton1)
-console.log(botonesDeMierda)
+
+
+
+
+
+// EVENTOS addEventListener (CLASE EVENTOS)
+
+const inputBuscador = document.getElementById("inputBuscador")
+const boton= document.getElementById("button")
+
+
+// ESTO LO PUSE COMO PARA QUE LAS BUSQUEDAS QUE HAGA EL USUARIO QUEDEN GUARDADAS, Y EN OCASIONES FUTURAS LE LLEGUEN PROMOS U OFERTAS QUE COINCIDAN CON SU BUSQUEDA
+// 
+// 
+inputBuscador.addEventListener("change", () => { console.log(inputBuscador.value) })
+boton.addEventListener("click", () =>{ console.log (inputBuscador.value)})
+// 
+// 
+//  
+
+document.addEventListener("keyup", e=>{
+
+if (e.target.matches("#inputBuscador")){  
+
+if (e.key ==="Escape")e.target.value = ""
+
+document.querySelectorAll(".alojamiento").forEach(palabra =>{
+  
+palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+
+?palabra.classList.remove("filtro")
+
+:palabra.classList.add("filtro")
+
+})
+}
+})
