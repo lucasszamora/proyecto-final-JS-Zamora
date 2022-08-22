@@ -3,14 +3,14 @@
 
 const container= document.getElementById("container")
 
-// class hotel{
-//     constructor(foto,nombre,ubicacion,precio){
-//     this.foto= foto ;
-//     this.nombre = nombre ;
-//     this.ubicacion = ubicacion ;
-//     this.precio = precio ;
-// }
-// }
+class hotel{
+    constructor(foto,nombre,ubicacion,precio){
+    this.foto= foto ;
+    this.nombre = nombre ;
+    this.ubicacion = ubicacion ;
+    this.precio = precio ;
+}
+}
 
 // const hotel1 = new hotel ("./images/hotel1.png","Miami Resort","Miami, EE. UU.", 34)
 // const hotel2 = new hotel ("./images/hotel2.jpg","Vistas do Praia Hotel","Lisboa, Portugal.", 42)
