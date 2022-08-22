@@ -165,21 +165,6 @@ footer{
 }
 
 
-/* SWEET ALERT */
-.swal2-container.swal2-center>.swal2-popup {
-    background: #ff385C;
-    color: white;
-    border: solid;
-}
-.swal2-styled.swal2-confirm{
-background-color: #000;
-font-size: 1.3em;
-border: solid;
-border-radius: 15px;
-
-}
-/*  */
-
 /* 
 DARK MODE - DARK MODE - DARK MODE -DARK MODE
 */
@@ -303,3 +288,19 @@ DARK MODE - DARK MODE - DARK MODE -DARK MODE
         padding: 0.8em;
     }
 }
+
+
+/* SWEET ALERT */
+.swal2-container.swal2-center>.swal2-popup {
+    background: #ff385C;
+    color: white;
+    border: solid;
+}
+.swal2-styled.swal2-confirm{
+background-color: #ca0f38;
+font-size: 1.3em;
+/* border: solid 2px; */
+border-radius: 15px;
+}
+
+/*  */
