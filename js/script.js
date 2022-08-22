@@ -29,7 +29,7 @@ class hotel{
 // const hotel15 = new hotel ("./images/hotel15.jpg","Amazonas Resort","Amazonas, Brasil.", 43)
 // const hoteles=[hotel1,hotel2,hotel3,hotel4,hotel5,hotel6,hotel7,hotel8,hotel9,hotel10,hotel11,hotel12,hotel13,hotel14,hotel15]
 
-fetch("../hotels.json")
+fetch("./js/hotels.json")
 .then(response=> response.json())
 .then(hoteles => {
     hoteles.forEach(hotel => {
