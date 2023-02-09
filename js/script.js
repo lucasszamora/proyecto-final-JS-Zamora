@@ -4,11 +4,12 @@
 const container= document.getElementById("container")
 
 class hotel{
-    constructor(foto,nombre,ubicacion,precio){
+    constructor(foto,nombre,ubicacion,precio, indice){
     this.foto= foto ;
     this.nombre = nombre ;
     this.ubicacion = ubicacion ;
     this.precio = precio ;
+    this.indice = indice ;
 }
 }
 
@@ -31,39 +32,14 @@ fetch("./js/hotels.json")
         `
     })
     
- ////////////////     LIBRERIAS
+ //     LIBRERIAS
 
-    const boton1 = document.getElementById("btn1")
-    const boton2 = document.getElementById("btn2")
-    const boton3 = document.getElementById("btn3")
-    const boton4 = document.getElementById("btn4")
-    const boton5 = document.getElementById("btn5")
-    const boton6 = document.getElementById("btn6")
-    const boton7 = document.getElementById("btn7")
-    const boton8 = document.getElementById("btn8")
-    const boton9 = document.getElementById("btn9")
-    const boton10 = document.getElementById("btn10")
-    const boton11 = document.getElementById("btn11")
-    const boton12 = document.getElementById("btn12")
-    const boton13 = document.getElementById("btn13")
-    const boton14 = document.getElementById("btn14")
-    const boton15 = document.getElementById("btn15")
+const reservas = document.querySelectorAll(".btn");
+reservas.forEach( reserva => {
+    reserva.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!', "Le enviaremos los datos a su email.", "success")})
+})
 
-    boton1.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton2.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton3.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton4.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton5.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton6.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton7.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton8.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton9.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton10.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton11.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton12.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton13.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton14.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
-    boton15.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+
 
     
 // DARK MODE - DARK MODE - DARK MODE -DARK MODE
@@ -212,6 +188,10 @@ palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
 }
 })
 
+
+// MALAS PRACTICAS QUE LAS GUARDO PARA ACORDARME DE QUE NO SON LA MEJOR APLICACION
+
+
 // const hotel1 = new hotel ("./images/hotel1.png","Miami Resort","Miami, EE. UU.", 34)
 // const hotel2 = new hotel ("./images/hotel2.jpg","Vistas do Praia Hotel","Lisboa, Portugal.", 42)
 // const hotel3 = new hotel ("./images/hotel3.jpg","Buenos Aires Hilton","Buenos Aires, Argentina.", 27)
@@ -228,3 +208,37 @@ palabra.textContent.toLowerCase().includes(e.target.value.toLowerCase())
 // const hotel14 = new hotel ("./images/hotel14.jpg","Restare Fortunato","Napoles, Italia.", 238)
 // const hotel15 = new hotel ("./images/hotel15.jpg","Amazonas Resort","Amazonas, Brasil.", 43)
 // const hoteles=[hotel1,hotel2,hotel3,hotel4,hotel5,hotel6,hotel7,hotel8,hotel9,hotel10,hotel11,hotel12,hotel13,hotel14,hotel15]
+
+    // const boton1 = document.getElementById("btn1")
+    // const boton2 = document.getElementById("btn2")
+    // const boton3 = document.getElementById("btn3")
+    // const boton4 = document.getElementById("btn4")
+    // const boton5 = document.getElementById("btn5")
+    // const boton6 = document.getElementById("btn6")
+    // const boton7 = document.getElementById("btn7")
+    // const boton8 = document.getElementById("btn8")
+    // const boton9 = document.getElementById("btn9")
+    // const boton10 = document.getElementById("btn10")
+    // const boton11 = document.getElementById("btn11")
+    // const boton12 = document.getElementById("btn12")
+    // const boton13 = document.getElementById("btn13")
+    // const boton14 = document.getElementById("btn14")
+    // const boton15 = document.getElementById("btn15")
+
+    // boton1.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton2.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton3.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton4.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton5.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton6.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton7.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton8.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton9.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton10.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton11.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton12.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton13.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton14.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+    // boton15.addEventListener("click", ()=>{Swal.fire('Hotel Reservado!','Le enviaremos los datos a su email.','success')})
+
+    
